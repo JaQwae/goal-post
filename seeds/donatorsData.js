@@ -17,7 +17,7 @@ const donatorsData = [
    donator_id: 3,
 },
 {
-  donator_name 'John Smith',
+  donator_name:  'John Smith',
   donation_amount: 1000,
   donator_id: 4,
 },
