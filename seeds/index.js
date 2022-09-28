@@ -1,7 +1,7 @@
 // Seeds requires
-const sequelize = require('../config/connection');
-const businessData = require('./businessData');
+// const sequelize = require('../config/connection');
+// const donationReceipentsData = require('./donationRecipientData')
 
-const seedALL = async () => {
-    
-}
+// const seedALL = async () => {
+
+// }
