@@ -22,7 +22,14 @@ Recipient.init(
     recipient_category: {
       type: DataTypes.STRING,
       allowNull: false
-    }
+    },
+    league_id: {
+      type: DataTypes.INTEGER,
+      references: {
+          model: 'league',
+          key: 'id'
+      }
+  }
   },
   {
     sequelize,
