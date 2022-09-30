@@ -27,13 +27,13 @@ Investor.init(
         isNumeric: true
       }
     },
-    category_id: {
+    league_id: {
       type: DataTypes.INTEGER,
       references: {
-        model: 'category',
-        key: 'id'
+          model: 'league',
+          key: 'id'
       }
-    }
+  }
   },
   {
     sequelize,
