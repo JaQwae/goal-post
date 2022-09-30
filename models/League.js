@@ -12,7 +12,7 @@ League.init(
       type: DataTypes.INTEGER,
       allowNull: false,
       primaryKey: true,
-      autoIncrement: true
+      autoIncrement: true,
     },
     league_name: {
       type: DataTypes.STRING,
