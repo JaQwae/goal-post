@@ -1,0 +1,33 @@
+[
+  {
+    "investor_name": "Robert Smith",
+    "investment": 1000000000,
+    "investor_id": 1
+  },
+  {
+    "investor_name": "Brandon Williams",
+    "investment": 9000000,
+    "investor_id": 2
+  },
+  {
+    "investor_name": "Jim Mclngvale",
+    "investment": 1000000,
+    "investor_id": 3
+  },
+  {
+    "investor_name": "John Legend",
+    "investment": 10000000,
+    "investor_id": 4
+  },
+  {
+    "investor_name": "Jose Altuve",
+    "investment": 993400000,
+    "investor_id": 5
+  },
+  {
+    "investor_name": "ICE CUBE",
+    "investment": 2000000000,
+    "investor_id": 6
+  }
+]
+
