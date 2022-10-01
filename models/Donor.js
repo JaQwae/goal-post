@@ -22,14 +22,21 @@ Donor.init(
       validate: {
         isNumerical: true
       }
-    }
+    },
+    league_id: {
+      type: DataTypes.INTEGER,
+      references: {
+          model: 'league',
+          key: 'id'
+      }
+  }
   },
   {
     sequelize,
     timestamps: false,
     freezeTableName: true,
     underscored: true,
-    modelName: 'product_tag',
+    modelName: 'donor',
   }
 );
 
