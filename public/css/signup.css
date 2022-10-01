@@ -1,0 +1,17 @@
+a{
+    text-decoration: none;
+    color: black;
+    }
+.card {
+    text-align: center;
+    margin: auto;
+    width: 20%;
+    border: 4px solid #5e6654;
+    padding: 10px;
+
+}
+#username-input-signup, #password-input-signup, #signup-btn, #login-btn{
+    padding: 5px; 
+    margin: 5px;
+    cursor: pointer;
+}
