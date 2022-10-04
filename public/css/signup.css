@@ -10,8 +10,20 @@ a{
     padding: 10px;
 
 }
-#username-input-signup, #password-input-signup, #signup-btn, #login-btn{
+#email-input-signup, #username-input-signup, #password-input-signup, #signup-btn, #login-btn{
     padding: 5px; 
     margin: 5px;
     cursor: pointer;
+}
+label{
+    display: inline-block;
+    float: center;
+    clear: left;
+    width: 250px;
+    text-align: center;
+}
+input {
+  display: inline-block;
+  float: center;
+  width: 50%;
 }
