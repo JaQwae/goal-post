@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+  <link rel="stylessheet" href="styles.css">
+  <title>Document</title>
+</head>
+<body>
+
+
+
+<!--Breadcrumbs-->
+
+  <nav class="breadcrumb is-right" aria-label="Account">
+    <ul>
+      <li><a href="#">Users</a></li>
+      <li><a href="#">Investor</a></li>
+      <li><a href="#">Teams</a></li>
+      <li class="is-active"><a href="#" aria-current="page">Breadcrumb</a></li>
+    </ul>
+  </nav>
+
+
+<!-- FORMS -->
+<!--Investors Name-->
+
+  <div class="field">
+    <label class="label">Name</label>
+    <div class="control">
+      <input class="input" type="text" placeholder="Investor">
+    </div>
+  </div>
+
+
+<!--Asking for UserName-->
+
+  <div class="field">
+    <label class="label">Username</label>
+    <div class="control has-icons-left has-icons-right">
+      <input class="input is-success" type="text" placeholder="Text input" value="">
+      <span class="icon is-small is-left">
+        <i class="fas fa-user"></i>
+      </span>
+      <span class="icon is-small is-right">
+        <i class="fas fa-check"></i>
+      </span>
+    </div>
+    <p class="help is-success">This username is available</p>
+  </div>
+  
+
+<!--Asking for Email-->
+   <div class="field">
+    <label class="label">Email</label>
+    <div class="control has-icons-left has-icons-right">
+      <input class="input is-danger" type="email" placeholder="Email input" value="">
+      <span class="icon is-small is-left">
+        <i class="fas fa-envelope"></i>
+      </span>
+      <span class="icon is-small is-right">
+        <i class="fas fa-exclamation-triangle"></i>
+      </span>
+    </div>
+    <p class="help is-danger">This email is invalid</p>
+  </div>
+  
+
+<!--Select your Investment-->
+
+  <div class="field">
+   
+    <label class="label">Subject</label>
+    <div class="control">
+      <div class="select">
+        <select>
+          <option>Select dropdown</option>
+          <option>WNBA</option>
+          <option>NFL</option>
+          <option>MLB</option>
+          <option>NBA</option>
+          <option>NHL</option>
+          <option>BIG3</option>
+        </select>
+      
+      </div>
+    </div>
+  </div>
+  
+
+ <!--Donations and Investments--> 
+
+  <div class="field has-addons">
+    <p class="control">
+      <span class="select">
+        <select>
+          <option>$</option>
+          <option>£</option>
+          <option>€</option>
+        </select>
+      </span>
+    </p>
+    <p class="control">
+      <input class="input" type="text" placeholder="Amount of money">
+    </p>
+    <p class="control">
+      <a class="button">
+        Transfer
+      </a>
+    </p>
+  </div>
+  
+
+<!--Terms and Conditions-->
+
+  <div class="field">
+    <div class="control">
+      <label class="checkbox">
+        <input type="checkbox">
+        I agree to the <a href="#">terms and conditions</a>
+      </label>
+    </div>
+  </div>
+  
+
+<!--Agreeing to the Terms and Conditions Yes or No-->
+
+  <div class="field">
+    <div class="control">
+      <label class="radio">
+        <input type="radio" name="question">
+        Yes
+      </label>
+      <label class="radio">
+        <input type="radio" name="question">
+        No
+      </label>
+    </div>
+  </div>
+  
+
+<!--Submission Button-->
+
+  <div class="field is-grouped">
+    <div class="control">
+      <button class="button is-link">Submit</button>
+    </div>
+    <div class="control">
+      <button class="button is-link is-light">Cancel</button>
+    </div>
+  </div>
+
+</body>
+</html>
