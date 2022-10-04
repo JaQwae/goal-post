@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Blog Post</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <header>
+        <h1>The Code</h1>
+    </header>
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link" href="/">Homepage</a>
+                    <a class="nav-link" href="/dashboard">Dashboard</a>
+                    <!-- If the user is logged in, show a logout button -->
+                    {{#if loggedIn}}
+                    <button id="logout" class="btn-no-style">Logout</button>
+                    {{else}}
+                    <!-- Otherwise, show a link to login -->
+                    <a class="nav-link" href="/login">Login</a>
+                    {{/if}}
+                </div>
+            </div>
+        </div>
+    </nav>
+    <main>
+        {{{body}}}
+    </main>
+    
+    <script src="/js/comment.js"></script>
+    <script src="/js/addPost.js"></script>
+    <script src="/js/editPost.js"></script>
+    <script src="/js/deletePost.js"></script>
+
+    
+    <!-- If the user is logged in, load the JS script for when they logout -->
+    {{#if loggedIn}}
+    <script src="/js/logout.js"></script>
+    {{/if}}
+    
+</body>
+</html>
