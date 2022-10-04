@@ -1,25 +1,25 @@
     // setup
     const data = {
-        labels: ['Raiders', '49ers', 'Cardinals', 'Dolphins'],
+        labels: ['Raiders', 'Texans', 'Dolphins', 'Cardinals'],
         datasets: [
           {
             label: "Cost",
-            data: [ 5.5,
-                    5,
-                    3,
-                    2.5],
-            backgroundColor: ["lightgreen"],
+            data: [ 5.0,
+                    4.5,
+                    4.2,
+                    3.3],
+            backgroundColor: ["rgba(0, 0, 0, 0.2)"],
             borderColor: ["green"],
             borderWidth: 2.5,
           },
           {
             label: "Funding",
-            data: [ 5,
-                    3.,
+            data: [ 2.0,
                     3.5,
-                    2.5,],
-            backgroundColor: ["rgba(0, 0, 0, 0.2)"],
-            borderColor: ["rgba(0, 0, 0, 1)"],
+                    1.0,
+                    2.8],
+            backgroundColor: ["lightgreen"],
+            borderColor: ["gray"],
             borderWidth: 2.5,
           },
         ],
@@ -44,7 +44,7 @@
               return 1;
             }
           });
-          // the differance inbetween cost and funding
+          // the difference between cost and funding
           const diffArray = data.datasets[0].data.map((datapoint, index) => {
             return data.datasets[1].data[index] - datapoint;
           });
@@ -88,7 +88,7 @@
                 // sub-titles in chart
                 title: {
                     display: true,
-                    text: 'NFL TEAMS',
+                    text: 'NFL Teams',
                     position: 'bottom'
                 },
                 subtitle: {
