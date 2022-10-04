@@ -1,8 +1,6 @@
 // import models
 const League = require('./League');
 const Investor = require('./Investor');
-const Donor = require('./Donor');
-const Recipient = require('./Recipient');
 const User = require('./User');
 const Post = require('./Post');
 const Comment = require('./Comment');
@@ -35,16 +33,7 @@ Comment.belongsTo(Post, {
   onDelete: 'Cascade'
 });
 
-League.hasMany(Donor, {
-  foreignKey: 'league_id',
-  onDelete: 'CASCADE'
-});
-
 League.hasMany(Investor, {
-  foreignKey: 'league_id',
-});
-
-League.hasMany(Recipient, {
   foreignKey: 'league_id',
 });
 
@@ -52,11 +41,6 @@ League.hasMany(Recipient, {
 Investor.belongsTo(League, {
   foreignKey: 'league_id'
 })
-
-Donor.belongsTo(League, {
-  foreignKey: 'league_id'
-})
-
 
 
 
@@ -66,7 +50,7 @@ Donor.belongsTo(League, {
 
 // // Leagues have many Investors
 
-module.exports = { League, Donor, Investor, Recipient, User, Post, Comment }
+module.exports = { League, Investor, User, Post, Comment }
 
 
 
