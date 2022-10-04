@@ -1,9 +1,17 @@
 const router = require('express').Router();
 
-const homeRoutes = require('./home-routes.js')
+const apiRoutes = require('./api');
+const welcomeRoutes = require('./welcomeRoutes');
+const mmaPostRoutes = require('./mmaPostRoutes');
+const investorRoutes = require('./investorRoutes');
+// const profileRoutes = require('./profileRoutes');
+const loginRoutes = require('./loginRoutes');
 
-
-router.use('/', homeRoutes)
-
+router.use('/', welcomeRoutes);
+router.use('/api', apiRoutes);
+router.use('/mma', mmaPostRoutes);
+router.use('/investor', investorRoutes);
+// router.use('/profile', profileRoutes);
+router.use('/login', loginRoutes);
 
 module.exports = router;
