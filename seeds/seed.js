@@ -1,3 +1,7 @@
+// Possibly deleting this unless it connects
+
+
+
 // const sequelize = require('../config/connection');
 // const { User, Project } = require('../models');
 
