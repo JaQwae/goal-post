@@ -1,0 +1,18 @@
+[
+    {
+        "content": "Fight the gate keepers!",
+        "user_id": 3,
+        "post_id": 1
+    },
+    {
+        "content": "Are you sure about that?",
+        "user_id": 2,
+        "post_id": 2
+    },
+    {
+        "content":  "Agreed!",
+        "user_id": 1,
+        "post_id": 3
+    }
+]
+

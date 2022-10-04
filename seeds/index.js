@@ -11,7 +11,13 @@ const donorData = require('./donor-seeds.json');
 const { Investor } = require ('../models');
 const investorData = require('./investor-seeds.json');
 const { Recipient } = require('../models');
-const recipientData = require('./recipient-seeds.json')
+const recipientData = require('./recipient-seeds.json');
+const userData = require('./userData');
+const { User } = require('../models');
+const commentData = require('./commentData')
+const { Comment } = require('../models');
+const postData = require('./postData');
+const { Post } = require('../models');
 
 const seedALL = async () => {
 
@@ -29,6 +35,25 @@ const seedALL = async () => {
 
     await Recipient.bulkCreate(recipientData);
     console.log('\n----- RECIPIENT SEEDED -----\n');
+
+    await User.bulkCreate(userData, {
+        individualHooks: true,
+        returning: true,
+    });
+    console.log('\n----- USER SEEDED -----\n');
+
+
+    await Post.bulkCreate(postData, {
+        individualHooks: true,
+        returning: true,
+    });
+    console.log('\n----- POST SEEDED -----\n');
+
+    await Comment.bulkCreate(commentData, {
+        individualHooks: true,
+        returning: true,
+    });
+    console.log('\n----- COMMENT SEEDED -----\n');
 
     process.exit(0)
 };

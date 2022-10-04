@@ -66,7 +66,7 @@ Donor.belongsTo(League, {
 
 // // Leagues have many Investors
 
-module.exports = { League, Donor, Investor, Recipient }
+module.exports = { League, Donor, Investor, Recipient, User, Post, Comment }
 
 
 
