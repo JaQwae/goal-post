@@ -1,15 +1,24 @@
 /* for the chart*/
 .chartCard {
-    width: 100vw;
+    width: 60vw;
     height: calc(100vh - 40px);
     display: flex;
     align-items: center;
-    justify-content: center;
+    /*justify-content: center;*/
+    position: relative;
+    left: 18.5%;
+    bottom: 90px
   }
   .chartBox {
-    width: 80%;
+    width: 100%;    
     padding: 20px;
     border-radius: 20px;
     border: solid 3px;
     background: transparent;
   }
+
+  .animate__bounceInLeft{
+    animation-duration: 2.3s;
+    position: relative;
+    left: 35%;
+}
