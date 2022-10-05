@@ -1,13 +1,13 @@
 const router = require('express').Router();
 
 const apiRoutes = require('./api');
-const welcomeRoutes = require('./welcomeRoutes');
+const homeRoutes = require('./homeRoutes');
 const mmaPostRoutes = require('./mmaPostRoutes');
 const leagueRoutes = require('./leagueRoutes');
 // const profileRoutes = require('./profileRoutes');
 const loginRoutes = require('./loginRoutes');
 
-router.use('/', welcomeRoutes);
+router.use('/', homeRoutes);
 router.use('/api', apiRoutes);
 router.use('/mma', mmaPostRoutes);
 router.use('/league', leagueRoutes);
