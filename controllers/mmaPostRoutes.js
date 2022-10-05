@@ -12,7 +12,7 @@ router.get('/', withAuth, async (req, res) => {
         const posts = dbPostData.map((post) => post.get({ plain: true }));
         
         // Pass serialized post data into Handlebars.js template
-        res.render('homepage', { posts });
+        res.render('homepage', { posts, loggedIn: req.session.loggedIn });
 
     
     } catch (err) {
@@ -22,4 +22,34 @@ router.get('/', withAuth, async (req, res) => {
     
 });
 
+// renders an individual MMA post
+router.get('/:id', withAuth, async (req, res) => {
+    try{
+        const dbPostData = await Post.findByPk(req.params.id, {
+            include: [
+                {
+                    model: User,
+                    attributes: ['username'],
+                },
+                {
+                    model: Comment,
+                    attributes: ['content', 'createdAt', 'user_id'],
+                    include: {
+                        model: User,
+                        attributes: ['username'],
+                    }
+                }
+            ],
+        });
+
+        const post = dbPostData.get({ plain: true });
+        console.log(post)
+        post.logged_in = req.session.logged_in
+        res.render('singlePost', { post, loggedIn: req.session.loggedIn });
+
+    } catch(err) {
+        console.log(err);
+        res.status(500).json(err);
+    }
+});
 module.exports = router

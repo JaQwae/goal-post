@@ -22,6 +22,10 @@
                 <div class="navbar-nav">
                     <a class="nav-link" href="/">Homepage</a>
                     <a class="nav-link" href="/dashboard">Dashboard</a>
+                    <a href="/league/mlbchart"><img src="/img/Major_League_Baseball_logo.svg.png" alt='HTML Home' width="100" height="48"></a>
+                    <a href="/league/nflchart"><img src="/img/nfl logo.png" alt='HTML Home' width="100" height="48"></a>
+                    <a href="/league/wnbachart"><img src="/img/wnba 2.png" alt='HTML Home' width="100" height="48"></a>
+                    <a href="/league/big3chart"><img src="/img/big 3.png" alt='HTML Home' width="100" height="48"></a>
                     <!-- If the user is logged in, show a logout button -->
                     {{#if loggedIn}}
                     <button id="logout" class="btn-no-style">Logout</button>
@@ -41,6 +45,7 @@
     <script src="/js/addPost.js"></script>
     <script src="/js/editPost.js"></script>
     <script src="/js/deletePost.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
     
     <!-- If the user is logged in, load the JS script for when they logout -->

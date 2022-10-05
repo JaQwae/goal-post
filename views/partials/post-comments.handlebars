@@ -1,0 +1,16 @@
+{{!-- render comment section on single post  --}}
+<div class="comments">
+    <div class="card">
+        <h3 class="card-header"></h3>
+        <section class="comment card-body">
+            <div class="text">
+                {{content}}
+            </div>
+            <div class="meta">
+                -{{user.username}}
+                <br>
+                -{{format_date createdAt}}
+            </div>
+        </section>
+    </div>
+</div>

@@ -1,3 +1,9 @@
 {
-    "liveServer.settings.port": 5501
+    "liveServer.settings.port": 5501,
+    "favorites.resources": [
+        {
+            "filePath": "big3-chart.html",
+            "group": "Default"
+        }
+    ]
 }
