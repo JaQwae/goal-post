@@ -12,7 +12,7 @@ const addPost = async (event) => {
         });
 
         if (response.ok) {
-            document.location.replace('/dashboard');
+            document.location.replace('/mypost');
         } else {
             alert('Failed to create a post');
         }
