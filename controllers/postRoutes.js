@@ -2,7 +2,7 @@ const router = require("express").Router();
 const { User, Post, Comment } = require('../models');
 const withAuth = require('../utils/auth')
 
-// renders MMA main post page
+// renders post page
 router.get('/', withAuth, async (req, res) => {
     try {
         
@@ -12,7 +12,7 @@ router.get('/', withAuth, async (req, res) => {
         const posts = dbPostData.map((post) => post.get({ plain: true }));
         
         // Pass serialized post data into Handlebars.js template
-        res.render('homepage', { posts, loggedIn: req.session.loggedIn });
+        res.render('posthome', { posts, loggedIn: req.session.loggedIn });
 
     
     } catch (err) {
