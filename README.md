@@ -24,7 +24,10 @@
 [![MIT License][license-shield]][license-url]
 [![LinkedIn][linkedin-shield]][linkedin-url]
 
-
+USER STORY
+AS A professional athlete
+I WANT a platform to research and analyze sports team investment opportunities
+SO THAT I can establish financial security for my family and stay involved with my passion after my playing career is over
 
 <!-- PROJECT LOGO -->
 <br />
