@@ -36,6 +36,18 @@
 
 }
 
+.post-home{
+  margin-left: 20%;
+  text-align: center;
+  margin-top: 50px;
+  border: 2px solid lightslategrey;
+  background-color: lightgray;
+  width: 60%;
+  padding: 5px;
+  font-weight: bold;
+  font-size: x-large;
+}
+
 
 .login-form, .sign-up-form {
   text-align: center;
@@ -52,4 +64,16 @@
 
 .user-info{
   text-align: center;
+} 
+
+a{
+  text-decoration: none;
+}
+#create-btn{
+  background-color: lightgray;
+  margin-top: 20px;
+  margin-left: 20px;
+  border: 2px solid lightslategrey;
+  font-weight: bold;
+  font-size: x-large;
 }
