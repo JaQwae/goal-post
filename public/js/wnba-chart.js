@@ -8,7 +8,7 @@
                     30,
                     20],
             backgroundColor: ["rgba(0, 0, 0, 0.2)"],
-            borderColor: ["pink"],
+            borderColor: ["darkorange"],
             borderWidth: 2.5,
           },
           {
@@ -17,7 +17,7 @@
                     10,
                     15],
             backgroundColor: ["lightgreen"],
-            borderColor: ["pink"],
+            borderColor: ["darkorange"],
             borderWidth: 2.5,
           },
         ],
