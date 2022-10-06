@@ -8,7 +8,7 @@
                     10.0,
                     8.0],
             backgroundColor: ["rgba(0, 0, 0, 0.2)"],
-            borderColor: ["darkorange"],
+            borderColor: ["rgba(215, 208, 4, 0.65)"],
             borderWidth: 2.5,
           },
           {
@@ -17,7 +17,7 @@
                     8.0,
                     2.0],
             backgroundColor: ["lightgreen"],
-            borderColor: ["darkorange"],
+            borderColor: ["rgba(215, 208, 4, 0.65)"],
             borderWidth: 2.5,
           },
         ],

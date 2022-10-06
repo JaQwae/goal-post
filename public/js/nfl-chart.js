@@ -19,7 +19,7 @@
                     1.0,
                     2.8],
             backgroundColor: ["lightgreen"],
-            borderColor: ["gray"],
+            borderColor: ["green"],
             borderWidth: 2.5,
           },
         ],
