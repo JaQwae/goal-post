@@ -7,7 +7,7 @@
     /*justify-content: center;*/
     position: relative;
     left: 18.5%;
-    bottom: 90px
+    bottom: 135px
   }
   .chartBox {
     width: 100%;    
@@ -21,4 +21,17 @@
     animation-duration: 2.3s;
     position: relative;
     left: 35%;
+}
+
+.Goal{
+  font-size: 65px;;
+  font-weight: 800;
+  color: darkblue;
+}
+
+.Post{
+  font-size: 65px;
+  font-weight: 800;
+  color: red;
+
 }

@@ -3,7 +3,7 @@
         labels: ['3 Headed Monsters', 'Killer 3s', 'Trilogy'],
         datasets: [
           {
-            label: "Cost",
+            label: "Price",
             data: [ 12.0,
                     10.0,
                     8.0],
