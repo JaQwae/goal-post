@@ -3,7 +3,7 @@
         labels: ['Dodgers', 'Mets', 'Astros', 'Mariners'],
         datasets: [
           {
-            label: "Cost",
+            label: "Price",
             data: [ 4.0,
                     2.6,
                     2.0,

@@ -3,7 +3,7 @@
         labels: ['Dallas Wings', 'L.A. Sparks', 'Phoenix Mercury'],
         datasets: [
           {
-            label: "Cost",
+            label: "Price",
             data: [ 45,
                     30,
                     20],

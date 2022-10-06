@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tech Blog Post</title>
+    <title>Goal Post</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <link
       rel="stylesheet"
@@ -18,7 +18,8 @@
 </head>
 <body>
     <header>
-        <h1>The Code</h1>
+        <h1 class="Goal">Goal<span class="Post">Post</span></h1>
+        <!--<h1>Goal Post</h1>-->
     </header>
     <nav class="navbar navbar-expand-lg bg-light">
         <div class="container-fluid">
@@ -37,10 +38,12 @@
                     <a href="/league/big3chart"><img src="/img/big 3.png" alt='HTML Home' width="100" height="48"></a>
                     <!-- If the user is logged in, show a logout button -->
                     {{#if loggedIn}}
-                    <button id="logout" class="btn-no-style">Logout</button>
+                    <button href="/login" id="logout-link" class="btn-no-style">Logout</button>
                     {{else}}
                     <!-- Otherwise, show a link to login -->
-                    <a class="nav-link" href="/login">Login</a>
+                    <!-- <a class="nav-link" id="logout-link" href="/login">Login</a>-->
+                    <button href="/login" id="logout-link" class="btn-no-style">Logout</button>
+
                     {{/if}}
                 </div>
             </div>

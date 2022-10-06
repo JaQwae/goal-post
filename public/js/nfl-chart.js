@@ -3,7 +3,7 @@
         labels: ['Raiders', 'Texans', 'Dolphins', 'Cardinals'],
         datasets: [
           {
-            label: "Cost",
+            label: "Price",
             data: [ 5.0,
                     4.5,
                     4.2,
