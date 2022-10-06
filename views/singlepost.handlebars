@@ -1,0 +1,31 @@
+<div class="card text-center single-post">
+    <section class="card-header single-post-header">
+        <h2> {{post.title}} </h2>
+    </section>
+    <section class="card-body single-post-body">
+        <h5 class="card-title">{{post.content}}</h5>
+        <p class="card-text">Posted by: {{post.user.username}}</p>
+    </section>
+    
+    <section class='single-post-comment-container'>
+        <div class='single-post-comment-label'>
+            <label for="comment">Comment:</label>
+        </div>
+        <div class='single-post-comment-textarea'>
+            <textarea id="comment" name="comment"></textarea>
+        </div>
+        <div>
+            <button id = 'comment-submit' class="btn btn-primary single-post-comment-btn">Submit</button>
+        </div>
+    </section>
+    <section class="flex-row justify-center">
+        {{#each post.comments as |comment|}}
+        {{> post-comments}}
+        {{/each}}
+    </section>
+    <section class="card-footer text-muted single-post-footer">
+        <p>Posted at: {{format_date post.createdAt}}</p>
+    </section>
+</div>
+
+<script src="/js/comment.js"></script>

@@ -1,0 +1,79 @@
+/* for the chart*/
+.chartCard {
+    width: 60vw;
+    height: calc(100vh - 40px);
+    display: flex;
+    align-items: center;
+    /*justify-content: center;*/
+    position: relative;
+    left: 18.5%;
+    bottom: 135px
+  }
+  .chartBox {
+    width: 100%;    
+    padding: 20px;
+    border-radius: 20px;
+    border: solid 3px;
+    background: transparent;
+  }
+
+  .animate__bounceInLeft{
+    animation-duration: 2.3s;
+    position: relative;
+    left: 35%;
+}
+
+.Goal{
+  font-size: 65px;;
+  font-weight: 800;
+  color: darkblue;
+}
+
+.Post{
+  font-size: 65px;
+  font-weight: 800;
+  color: red;
+
+}
+
+.post-home{
+  margin-left: 20%;
+  text-align: center;
+  margin-top: 50px;
+  border: 2px solid lightslategrey;
+  background-color: lightgray;
+  width: 60%;
+  padding: 5px;
+  font-weight: bold;
+  font-size: x-large;
+}
+
+
+.login-form, .sign-up-form {
+  text-align: center;
+  margin: auto;
+  width: 30%;
+  border: 4px solid #5e6654;
+  padding: 10px;
+  border: 3px solid var(--dark);
+  border-radius: var(--border-radius);
+  border-style: double;
+  border-width: thick;
+  background-color: lightgray;
+}
+
+.user-info{
+  text-align: center;
+} 
+
+a{
+  text-decoration: none;
+}
+#create-btn{
+  background-color: lightgray;
+  margin-top: 20px;
+  margin-left: 20px;
+  border: 2px solid lightslategrey;
+  font-weight: bold;
+  font-size: x-large;
+}

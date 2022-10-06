@@ -1,0 +1,14 @@
+<div class="card text-center single-post">
+    {{#if posts.length}}
+    <section class="flex-row justify-center">
+        <h2>Your Posts</h2>
+        {{#each posts as |post|}}
+        {{> singlemypost post}}
+        {{/each}}
+    </section>
+    {{/if}}
+
+</div>
+
+
+<button type="submit" class="btn" id="create-btn"><a class="link" href="mypost/new">+ New Post</a></button>

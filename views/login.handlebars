@@ -1,0 +1,35 @@
+
+<h2 class="user-info">Login</h2>
+
+<form class = 'login-form'>
+    <div class="mb-3">
+        <label for="login-username" class="form-label">Username</label>
+        <input type="text" class="form-control" id="login-username" aria-describedby="login-username-help">
+    </div>
+    <div class="mb-3">
+        <label for="login-password" class="form-label">Password</label>
+        <input type="password" class="form-control" id="login-password">
+    </div>
+    <button type="submit" class="btn btn-primary" id = 'login-btn'>Login</button>
+</form>
+
+
+<h2 class="user-info">Create an account</h2>
+<form class = 'sign-up-form'>
+    {{!-- DO we need an email? --}}
+    {{!-- <div class="mb-3">
+        <label for="sign-up-email" class="form-label">Email address</label>
+        <input type="email" class="form-control" id="sign-up-email" aria-describedby="sign-up-email-help">
+    </div> --}}
+    <div class="mb-3">
+        <label for="sign-up-username" class="form-label">Username</label>
+        <input type="text" class="form-control" id="sign-up-username" aria-describedby="sign-up-username-help">
+    </div>
+    <div class="mb-3">
+        <label for="sign-up-password" class="form-label">Password</label>
+        <input type="password" class="form-control" id="sign-up-password">
+    </div>
+    <button type="submit" class="btn btn-primary" id = 'sign-up-btn'>Sign-up</button>
+</form>
+
+<script src ="/js/login.js"></script>

@@ -1,49 +1,53 @@
-async function signupFormHandler(event) {
-    event.preventDefault();
-    
-    const email = document.querySelector('#email-signup').value.trim();
-    const password = document.querySelector('#password-signup').value.trim();
-    if (username && email && password) {
-      const response = await fetch('/api/users', {
-        method: 'post',
-        body: JSON.stringify({          
-          email,
-          password,
-        }),
-        headers: { 'Content-Type': 'application/json' },
-      });
-      if (response.ok) {
-        console.log(response);
-      } else {
-        alert(response.statusText);
-      }
-    }
-  }
-  async function loginFormHandler(event) {
+const loginFormHandler = async (event) => {
+
     event.preventDefault();
 
-    const email = document.querySelector('#email-signup').value.trim();
-    const password = document.querySelector('#password-signup').value.trim();
+    // Grabs data from form boxes
+    const username = document.querySelector('#login-username').value.trim();
+    const password = document.querySelector('#login-password').value.trim();
 
-    if (email && password) {
-      const response = await fetch('/api/users/login', {
-        method: 'post',
-        body: JSON.stringify({
-          email,
-          password,
-        }),
+    // console.log(username,  password)
+    if (username && password) {
+        const response = await fetch('/api/user/login', {
+            method: 'POST',
+            body: JSON.stringify({ username, password }),
+            headers: { 'Content-Type': 'application/json' },
+        });
         
-        headers: { 'Content-Type': 'application/json' },
-      });
-      if (response.ok) {
-        document.location.replace('/')
-      } else {
-        alert(response.statusText);
-      }
+        if (response.ok) {
+            document.location.replace('/');
+        } else {
+            alert('Login failed');
+        }
     }
-  }
+}
 
-  document.querySelector('.login-form').addEventListener('submit', loginFormHandler);
+const signupFormHandler = async (event) => {
+    event.preventDefault();
 
-  document.querySelector('.signup-form').addEventListener('submit', signupFormHandler);
- 
+    const username = document.querySelector('#sign-up-username').value.trim();
+    const password = document.querySelector('#sign-up-password').value.trim();
+    
+    // console.log(username,  password)
+    if (username  && password) {
+        const response = await fetch('/api/user/', {
+            method: 'POST',
+            body: JSON.stringify({ username, password }),
+            headers: { 'Content-Type': 'application/json' },
+        });
+        console.log(response)
+        if (response.ok) {
+            document.location.replace('/');
+        } else {
+            alert('Failed to sign up.');
+        }
+    }
+};
+
+document
+    .querySelector('.login-form')
+    .addEventListener('submit', loginFormHandler);
+
+document
+    .querySelector('.sign-up-form')
+    .addEventListener('submit', signupFormHandler);
