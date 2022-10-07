@@ -1,10 +1,10 @@
 const Sequelize = require('sequelize');
 require('dotenv').config({ path: require('find-config')('.env') });
 
-let sequelize
+let sequelize;
 
-if(process.env.JAWDB_URL) {
-    sequelize = new Sequelize(process.env.JAWDB_URL, {
+if(process.env.JAWSDB_URL) {
+    sequelize = new Sequelize(process.env.JAWSDB_URL, {
         host:'a3bm4rkhcnv0aoa6:gdvhi2sp31o5wi0w@au77784bkjx6ipju.cbetxkdyhwsb.us-east-1.rds.amazonaws.com:3306/uovoke8ilsfkhnnj',
         dialect: 'mysql',
         dialectOptions: {
