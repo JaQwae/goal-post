@@ -12,11 +12,13 @@ const helpers = require('./utils/helpers');
 // Create a new sequelize store using the express-session package
 const SequelizeStore = require('connect-session-sequelize')(session.Store);
 
+// Set Port
+const PORT = process.env.PORT || 3001;
+
 // Init App
 const app = express();
 
-// Set Port
-const PORT = process.env.PORT || 3001;
+app.set("port", PORT);
 
 // Handlebars middleware
 const hbs = exphbs.create({ helpers });
@@ -57,6 +59,6 @@ sequelize.sync({ force: false}).then(() => {
     app.listen(PORT, () => console.log('Now listening'));
 });
 
-server.listen(port, () => {
-    console.log(`Listening on http://localhost:${port}/`);
+server.listen(PORT, () => {
+    console.log(`Listening on http://localhost:${PORT}/`);
 });
