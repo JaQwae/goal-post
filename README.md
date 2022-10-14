@@ -2,7 +2,7 @@
 
 ```
 
-AS A sports fan
+AS A sports fan and an investor
 I WANT a platform to research and analyze pro sports team ownership stake opportunities 
 SO THAT I can become more involved with my passion and establish financial security for my family
 ```
