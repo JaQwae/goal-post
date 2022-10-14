@@ -4,13 +4,13 @@ require('dotenv').config();
 let sequelize;
 
 if(process.env.JAWSDB_URL) {
-    sequelize = new Sequelize(process.env.JAWSDB_URL, {
-        host:'a3bm4rkhcnv0aoa6:gdvhi2sp31o5wi0w@au77784bkjx6ipju.cbetxkdyhwsb.us-east-1.rds.amazonaws.com:3306/uovoke8ilsfkhnnj',
-        dialect: 'mysql',
-        dialectOptions: {
-            decimalNumbers: true,
-        }
-    })
+    sequelize = new Sequelize(process.env.JAWSDB_URL);
+    //     host:'a3bm4rkhcnv0aoa6:gdvhi2sp31o5wi0w@au77784bkjx6ipju.cbetxkdyhwsb.us-east-1.rds.amazonaws.com:3306/uovoke8ilsfkhnnj',
+    //     dialect: 'mysql',
+    //     dialectOptions: {
+    //         decimalNumbers: true,
+    //     }
+    // })
 }
 else {
     sequelize = new Sequelize(
