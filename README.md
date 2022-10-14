@@ -30,6 +30,8 @@ I WANT a platform to research and analyze sports team investment opportunities
 SO THAT I can establish financial security for my family and stay involved with my passion after my playing career is over
 
 <!-- PROJECT LOGO -->
+![GoalPost screenshot1](https://user-images.githubusercontent.com/102529279/195837209-26c5e72f-27e4-459c-bec3-e063e164abed.JPG)
+
 <br />
 <div align="center">
   <a href="https://github.com/github_username/repo_name">
