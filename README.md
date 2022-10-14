@@ -7,7 +7,7 @@ I WANT a platform to research and analyze pro sports team ownership stake opport
 SO THAT I can become more involved with my passion and establish financial security for my family
 ```
 <div align="center">
-  <a href="https://github.com/jlewisit/goal.git">
+  <a href="https://goal-2022.herokuapp.com/">
   <img src="https://user-images.githubusercontent.com/102529279/195899195-b4eff0ad-a6ba-468f-9932-1e7ecb091076.png"             alt="'Goal Post' with bull logo">
   </a>
   
@@ -30,7 +30,7 @@ Node, Express, Handlebars, MySQL, Sequelize, Chart.js
 <br>
 
 <div align="center">
-  <a href="https://github.com/jlewisit/goal.git">
+  <a href="https://goal-2022.herokuapp.com/">
   <img src="https://user-images.githubusercontent.com/102529279/195904204-118cb12b-630b-4456-a01b-dce4b07c0084.JPG"             alt="Goal Post site with MLB logo over a financial bar graph">
   </a>
    
