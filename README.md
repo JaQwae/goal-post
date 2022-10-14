@@ -24,18 +24,18 @@
 [![MIT License][license-shield]][license-url]
 [![LinkedIn][linkedin-shield]][linkedin-url]
 
-USER STORY
+## USER STORY
 AS A professional athlete
 I WANT a platform to research and analyze sports team investment opportunities
 SO THAT I can establish financial security for my family and stay involved with my passion after my playing career is over
 
-https://files.slack.com/files-pri/T03F8HA3J80-F044W5DNC15/th-1872588824
 ![GoalPost screenshot1](https://user-images.githubusercontent.com/102529279/195837209-26c5e72f-27e4-459c-bec3-e063e164abed.JPG)
 
 <br />
 <div align="center">
-  <a href="https://github.com/github_username/repo_name">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
+  <a href="[https://github.com/github_username/repo_name](https://github.com/jlewisit/goal.git)">
+    <img src="![th-1872588824](https://user-images.githubusercontent.com/102529279/195895823-51fa5c8d-cbd4-4be7-9fac-57cd01b4a083.jpg)
+" alt="Logo" width="80" height="80">
   </a>
 
 <h3 align="center">Goal_Post</h3>
