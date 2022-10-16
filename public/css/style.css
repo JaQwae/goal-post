@@ -9,8 +9,19 @@ body {
 }
 
 .logo-row {
+  /* display: flex;
+  justify-content: center; */
   background-color: white;
-  /* align-items: center center; */
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-left: 200px;
+  padding-right: 50px;
+  align-items: center;
+}
+
+.nfl-col {
+  align-items: right;
+  padding-left: 110px;
 }
 
 /* for the chart*/
