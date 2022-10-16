@@ -2,10 +2,21 @@
   background-color: #d9dcd6;
 }
 
-.tagline {
+.login-logout-container {
+  display: flex;
+  align-items: flex-end;
+}
+
+.login-logout {
+  /* align-items: flex-end; */
+  /* align-items: right; */
+}
+
+.select-league {
   text-align: center;
-  color: white;
-  font-size: 2.5em;
+  padding-top: 30px;
+  color: darkblue;
+  /* font-size: 2.5em; */
 }
 
 .logo-row {
@@ -19,18 +30,25 @@
   align-items: center;
 }
 
+.logo-chart {
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  /* padding-left: 500px; */
+}
+
 .nfl-col {
   align-items: right;
   padding-left: 110px;
 }
 
 /* Sets standing opacity for image links */
-.work-box2 img, .work-box4 img, .work-box5 img, .work-box7 img, .work-box8 img {
-  opacity: .4;
+.col img:hover{
+  opacity: .5;
 }
 
 /* Maximizes opacity on hover over image links */
-.work-box2 img:hover, .work-box4 img:hover, .work-box5 img:hover, .work-box7 img:hover, .work-box8 img:hover {
+.col img {
   opacity: 1;
 }
 
@@ -54,9 +72,9 @@
   }
 
   .animate__bounceInLeft{
-    animation-duration: 2.3s;
+    animation-duration: 1s;
     position: relative;
-    left: 35%;
+    left: 45%;
 }
 
 .Goal{
@@ -112,4 +130,6 @@ a{
   border: 2px solid lightslategrey;
   font-weight: bold;
   font-size: x-large;
+  /* align-items: right; */
+  /* padding-left: 500px; */
 }
