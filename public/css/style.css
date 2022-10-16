@@ -1,5 +1,27 @@
 .homepage {
-  background-color: #d9dcd6;
+  background-color: rgba(0, 0, 0, .3);
+}
+
+.home-info {
+  background-image: url("/img/Cheering-in-box.jpg");
+  background-size: cover;
+  position: relative;
+}
+
+.text-block {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.home-logo {
+background-color: white;
+padding:"";
+align-items:"";
 }
 
 .login-logout-container {
@@ -8,15 +30,14 @@
 }
 
 .login-logout {
-  /* align-items: flex-end; */
-  /* align-items: right; */
-}
+  align-items: flex-end;
+  align-items: right;
+} 
 
 .select-league {
   text-align: center;
   padding-top: 30px;
   color: darkblue;
-  /* font-size: 2.5em; */
 }
 
 .logo-row {
@@ -52,6 +73,10 @@
   opacity: 1;
 }
 
+
+
+
+/************Original Goal Post*****************/
 /* for the chart*/
 .chartCard {
     width: 60vw;
