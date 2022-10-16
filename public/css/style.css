@@ -1,3 +1,18 @@
+body {
+  background-color: #d9dcd6;
+}
+
+.tagline {
+  text-align: center;
+  color: white;
+  font-size: 2.5em;
+}
+
+.logo-row {
+  background-color: white;
+  /* align-items: center center; */
+}
+
 /* for the chart*/
 .chartCard {
     width: 60vw;
