@@ -11,7 +11,7 @@ SO THAT I can become more involved with my passion and establish financial secur
   <img src="https://user-images.githubusercontent.com/102529279/195899195-b4eff0ad-a6ba-468f-9932-1e7ecb091076.png"             alt="'Goal Post' with bull logo">
   </a>
   
-  <h3 align="center">Invest in your Team</h3>
+  <h3 align="center">Own Your Team</h3>
   
   <p align="center">
     <a href="https://goal-2022.herokuapp.com/">View Demo<a>
