@@ -1,4 +1,4 @@
-body {
+.homepage {
   background-color: #d9dcd6;
 }
 
@@ -22,6 +22,16 @@ body {
 .nfl-col {
   align-items: right;
   padding-left: 110px;
+}
+
+/* Sets standing opacity for image links */
+.work-box2 img, .work-box4 img, .work-box5 img, .work-box7 img, .work-box8 img {
+  opacity: .4;
+}
+
+/* Maximizes opacity on hover over image links */
+.work-box2 img:hover, .work-box4 img:hover, .work-box5 img:hover, .work-box7 img:hover, .work-box8 img:hover {
+  opacity: 1;
 }
 
 /* for the chart*/
