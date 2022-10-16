@@ -20,8 +20,8 @@
 
 .home-logo {
 background-color: white;
-padding:"";
-align-items:"";
+padding: 30px;
+/* align-items: center; */
 }
 
 .login-logout-container {
