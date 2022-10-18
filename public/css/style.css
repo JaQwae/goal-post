@@ -2,6 +2,12 @@
   background-color: rgba(0, 0, 0, .3);
 }
 
+.home-container {
+  padding-bottom:100px;
+  padding-left: 200px;
+  padding-right: 200px;
+}
+
 .chart-header {
   padding: 50px;
 }
@@ -14,8 +20,9 @@
 
 .text-block {
   position: absolute;
+  width: 600px;
   bottom: 20px;
-  right: 20px;
+  left: 20px;
   background-color: rgba(0, 0, 0, 0.5);
   color: white;
   padding-left: 20px;
@@ -97,6 +104,21 @@ padding: 30px;
   opacity: 1;
 }
 
+header, footer {
+  height: 100px;
+  width: 100%;
+  /* background-color: darkblue; */
+}
+
+header {
+  /* border-bottom: 10px solid darkblue; */
+}
+
+footer {
+  position: absolute;
+  bottom: 10px;
+  background-color: darkblue;
+}
 
 
 
@@ -123,7 +145,7 @@ padding: 30px;
   }
 
   .animate__bounceInLeft {
-    animation-duration: 1.0s;
+    animation-duration: 1.3s;
     position: relative;
     left: 0%;
 }
@@ -135,15 +157,19 @@ padding: 30px;
 } */
 
 .Goal{
+  /* font-family: 'Edu NSW ACT Foundation'; */
+  /* font-style: Regular 400; */
+  /* font-style: lora; */
   font-size: 65px;;
   font-weight: 800;
-  color: darkblue;
+  color: black;
+  /* color: rgb(255, 174, 0); */
 }
 
 .Post{
   font-size: 65px;
   font-weight: 800;
-  color: red;
+  color: black;
 
 }
 
