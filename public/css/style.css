@@ -24,20 +24,39 @@ padding: 30px;
 /* align-items: center; */
 }
 
+.logo-background {
+  background-color: white;
+}
+
+.chart-background {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.hero-image {
+  background-image: url("/w3images/photographer.jpg");
+  background-color: #cccccc;
+  height: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
 .login-logout-container {
   display: flex;
   align-items: flex-end;
 }
 
-.login-logout {
+/* .login-logout {
   align-items: flex-end;
   align-items: right;
-} 
+}  */
 
 .select-league {
   text-align: center;
   padding-top: 30px;
   color: darkblue;
+  font-weight: bold;
 }
 
 .logo-row {
@@ -96,11 +115,17 @@ padding: 30px;
     background: transparent;
   }
 
-  .animate__bounceInLeft{
-    animation-duration: 1s;
+  .animate__bounceInLeft {
+    animation-duration: 1.0s;
     position: relative;
-    left: 45%;
+    left: 0%;
 }
+
+/* .animate__bounceInTop {
+  animation-duration: 2s;
+  position: relative;
+  left: 35%;
+} */
 
 .Goal{
   font-size: 65px;;
