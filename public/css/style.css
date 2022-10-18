@@ -28,9 +28,9 @@ padding: 30px;
   background-color: white;
 }
 
-.chart-background {
+/* .chart-background {
   background-color: rgba(0, 0, 0, 0.5);
-}
+} */
 
 .hero-image {
   background-image: url("/w3images/photographer.jpg");
@@ -104,9 +104,11 @@ padding: 30px;
     align-items: center;
     /*justify-content: center;*/
     position: relative;
+    padding: 50px;
     left: 18.5%;
     bottom: 135px
   }
+
   .chartBox {
     width: 100%;    
     padding: 20px;
