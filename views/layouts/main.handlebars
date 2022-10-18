@@ -1,4 +1,5 @@
-{{!-- <!DOCTYPE html> --}}
+{{!--
+<!DOCTYPE html> --}}
 <html lang="en">
 
 <head>
@@ -6,23 +7,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Goal Post</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation&display=swap" rel="stylesheet">
-    {{!-- <link rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
-      integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"/> --}}
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    {{!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation&display=swap" rel="stylesheet"> --}}
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+        integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link rel="stylesheet" href="/css/style.css">
 </head>
 
 <body>
     <header>
-        <a href="/"><h1 class="Goal"><i class="fab"></i>Goal<span class="Post">Post</span></h1></a>
+        <h1 class="goal-post">
+            <a class="goal-post" href="/">GoalPost</a>
         {{!-- <h3>Own Your Team</h3> --}}
+        </h1>
     </header>
 
     <nav class="navbar navbar-expand-lg bg-light">
@@ -40,8 +43,9 @@
                     <button href="/logout" id="logout-link" class="btn-no-style login-logout">Logout</button>
                     {{else}}
                     <!-- Otherwise, navigate to login page -->
-                    <href="/login"></href>
-                    {{/if}}
+                    <href=" /login">
+                        </href>
+                        {{/if}}
                 </div>
             </div>
         </div>
@@ -51,18 +55,21 @@
     </main>
 
     <footer>
-        <a href="/"><h1 class="Goal"><i class="fab"></i>Goal<span class="Post">Post</span></h1></a>
+        <a href="/">
+            <h1 class="goal-post">GoalPost</h1>
+        </a>
     </footer>
 
     <script src="/js/editPost.js"></script>
     <script src="/js/deletePost.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
-    
+
     <!-- If the user is logged in, load the JS script for when they logout -->
     {{#if loggedIn}}
     <script src="/js/logout.js"></script>
     {{/if}}
-    
+
 </body>
+
 </html>

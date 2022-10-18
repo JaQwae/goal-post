@@ -156,21 +156,12 @@ footer {
   left: 35%;
 } */
 
-.Goal{
-  /* font-family: 'Edu NSW ACT Foundation'; */
-  /* font-style: Regular 400; */
-  /* font-style: lora; */
+.goal-post {
+  font-family: serif;
   font-size: 65px;;
-  font-weight: 800;
   color: black;
+  font-weight: 600;
   /* color: rgb(255, 174, 0); */
-}
-
-.Post{
-  font-size: 65px;
-  font-weight: 800;
-  color: black;
-
 }
 
 .post-home{
