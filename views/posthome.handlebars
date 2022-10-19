@@ -1,16 +1,25 @@
+<body class="posthome">
+
 <article class="post">
-{{!-- loops that render each post on mma homepage --}}
+{{!-- loops that render each post on homepage --}}
 {{#each posts as |post| }}
+
 <a href="/post/{{post.id}}">
-    <div class="row align-center mb-5 home-post post-home ">
-        <div class="col-md-9 ">
+    <div class="row align-center mb-5 home-post post-home">
+
+        <div class="col-md-9 post-title">
             <!-- Render user-specific data with Handlebars.js expressions -->
             {{post.title}}
         </div>
-        <div class="col-md-3">
+
+        <div class="col-md-3 post-title">
             <h3 class="date-time ">{{format_date post.createdAt}}</h3>
         </div>
+
     </div>
 </a> 
+
 {{/each}}
 </article>
+
+</body>

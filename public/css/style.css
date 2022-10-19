@@ -30,6 +30,10 @@
   padding-right: 20px;
 }
 
+.mypost {
+  background-color: navy;
+}
+
 .home-logo {
 background-color: white;
 padding: 30px;
@@ -153,6 +157,9 @@ h4.goalpost2 {
   padding:20px;
 }
 
+.posthome {
+  background-color: navy;
+}
 
 
 /************Original Goal Post*****************/
@@ -203,6 +210,9 @@ h4.goalpost2 {
   font-size: x-large;
 }
 
+.post-title {
+  color: slategray;
+}
 
 .login-form, .sign-up-form {
   text-align: center;
