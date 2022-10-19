@@ -39,6 +39,9 @@ padding: 30px;
   background-color: white;
 }
 
+.logo {
+  height: 80px;
+}
 /* .chart-background {
   background-color: rgba(0, 0, 0, 0.5);
 } */
@@ -66,7 +69,7 @@ padding: 30px;
 .select-league {
   text-align: center;
   padding-top: 30px;
-  color: darkblue;
+  color: navy;
   font-weight: bold;
 }
 
@@ -107,17 +110,34 @@ padding: 30px;
 header, footer {
   height: 100px;
   width: 100%;
-  /* background-color: darkblue; */
+  /* background-color: navy; */
 }
 
 header {
-  /* border-bottom: 10px solid darkblue; */
+  /* border-bottom: 10px solid navy; */
+}
+
+h1.goalpost1 {
+  font-family: serif;
+  font-size: 65px;;
+  color: black;
+  font-weight: 600;
+  padding-left:20px;
 }
 
 footer {
   position: absolute;
-  bottom: 10px;
-  background-color: darkblue;
+  bottom: -600px;
+  height: 300px;
+  background-color: navy;
+}
+
+h4.goalpost2 {
+  font-size: 30px;
+  font-family: serif;
+  color: white;
+  font-weight: 600;
+  padding:20px;
 }
 
 
@@ -155,14 +175,6 @@ footer {
   position: relative;
   left: 35%;
 } */
-
-.goal-post {
-  font-family: serif;
-  font-size: 65px;;
-  color: black;
-  font-weight: 600;
-  /* color: rgb(255, 174, 0); */
-}
 
 .post-home{
   margin-left: 20%;
