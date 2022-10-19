@@ -47,6 +47,7 @@ padding: 30px;
   font-family: serif;
 }
 
+
 .logo {
   height: 80px;
 }
@@ -79,7 +80,7 @@ padding: 30px;
   padding-top: 10px;
   padding-bottom: 20px;
   font-family: serif;
-  color: black;
+  color: slategray;
   font-weight: bold;
 }
 
@@ -132,7 +133,7 @@ header {
 h1.goalpost1 {
   font-family: serif;
   font-size: 60px;;
-  color: black;
+  color: slategray;
   font-weight: 600;
   padding-left:20px;
 }
