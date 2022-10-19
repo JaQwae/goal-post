@@ -149,6 +149,7 @@ h1.goalpost1 {
   color: slategray;
   font-weight: 600;
   padding-left:20px;
+  background-color: var(--darker-color);
 }
 
 footer {
