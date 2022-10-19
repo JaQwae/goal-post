@@ -1,3 +1,11 @@
+:root {
+  --primary-color: #c7e9d5;
+  --secondary-color: #cee0c4;
+  --tertiary-color: #8ea1a1;
+  --lighter-color: #a9a9ac;
+  --darker-color: #202030;
+  --border-radius-color: 0.3rem;
+}
 .homepage {
   /* background-color: rgba(0, 0, 0, .3); */
   background-color: navy;
@@ -157,10 +165,6 @@ h4.goalpost2 {
   padding:20px;
 }
 
-.posthome {
-  background-color: navy;
-}
-
 
 /************Original Goal Post*****************/
 /* for the chart*/
@@ -246,6 +250,9 @@ a{
 }
 
 /*****BLOG*********/
+.posthome {
+  /* background-color: navy; */
+}
 
 .wrapper {
   width: 100%;
@@ -280,4 +287,25 @@ a{
 
 .card-body {
   padding: 1%;
+}
+
+.link {
+  color: var(--lighter-color);
+}
+
+.link-button {
+  color: var(--darker-color);
+}
+
+.link-color {
+  color: var(--tertiary-color);
+  margin: 10px;
+  padding: 10px;
+}
+
+.post {
+  padding-top: 35px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 35px;
 }
