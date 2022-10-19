@@ -244,3 +244,40 @@ a{
   /* align-items: right; */
   /* padding-left: 500px; */
 }
+
+/*****BLOG*********/
+
+.wrapper {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  min-height: 100%;
+  flex-direction: column;
+}
+
+.hero {
+  background-color: var(--darker-color);
+  color: var(--primary-color);
+  padding: 3% 4%;
+}
+
+.hero p {
+  max-width: 75%;
+}
+
+.card {
+  margin: 0 0 20px 0;
+  border: 2px solid var(--darker-color);
+  border-radius: var(--border-radius-color);
+}
+
+.card-header {
+  background-color: var(--darker-color);
+  color: var(--primary-color);
+  border-radius: calc(0.18rem - 1px) calc(0.18rem - 1px) 0 0;
+  padding: 1%;
+}
+
+.card-body {
+  padding: 1%;
+}
