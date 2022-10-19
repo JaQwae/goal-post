@@ -1,5 +1,6 @@
 .homepage {
-  background-color: rgba(0, 0, 0, .3);
+  /* background-color: rgba(0, 0, 0, .3); */
+  background-color: navy;
 }
 
 .home-container {
@@ -39,6 +40,13 @@ padding: 30px;
   background-color: white;
 }
 
+.nav-link {
+  color: navy;
+  font-size: 150%;
+  font-weight: 600;
+  font-family: serif;
+}
+
 .logo {
   height: 80px;
 }
@@ -68,8 +76,10 @@ padding: 30px;
 
 .select-league {
   text-align: center;
-  padding-top: 30px;
-  color: navy;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  font-family: serif;
+  color: black;
   font-weight: bold;
 }
 
@@ -108,18 +118,20 @@ padding: 30px;
 }
 
 header, footer {
-  height: 100px;
   width: 100%;
-  /* background-color: navy; */
 }
 
 header {
+  height: 70px;
+  /* background-color: black; */
   /* border-bottom: 10px solid navy; */
+  /* background-color: lightgray; */
+
 }
 
 h1.goalpost1 {
   font-family: serif;
-  font-size: 65px;;
+  font-size: 60px;;
   color: black;
   font-weight: 600;
   padding-left:20px;
@@ -127,9 +139,9 @@ h1.goalpost1 {
 
 footer {
   position: absolute;
-  bottom: -600px;
+  bottom: -500px;
   height: 300px;
-  background-color: navy;
+  background-color: black;
 }
 
 h4.goalpost2 {
@@ -170,11 +182,13 @@ h4.goalpost2 {
     left: 0%;
 }
 
-/* .animate__bounceInTop {
-  animation-duration: 2s;
+/* .animate__bounceInRight {
+  animation-duration: 1.3s;
   position: relative;
-  left: 35%;
-} */
+  bottom: 20px;
+  left: 20px;
+  /* right: 35%; */
+/* } */ */
 
 .post-home{
   margin-left: 20%;
