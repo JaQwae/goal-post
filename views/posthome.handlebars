@@ -21,39 +21,39 @@
         </header>
 
         <article class="post">
-        {{!-- loops that render each post on homepage --}}
-        {{#each posts as |post| }}
+            {{!-- loops that render each post on homepage --}}
+            {{#each posts as |post| }}
 
 
-        <div class="card">
-            <div class="card-reader">
-                <h4><a class="link link-button" href="/post/{{post.id}}">{{post.title}}</a></h4>
-            {{!-- <div class="row align-center mb-5 home-post post-home"> --}}
-                {{! replaced above div with below div}}
+            <div class="card">
+                <div class="card-reader">
+                    <h4><a class="link link-button" href="/post/{{post.id}}">{{post.title}}</a></h4>
+                    {{!-- <div class="row align-center mb-5 home-post post-home"> --}}
+                        {{! replaced above div with below div}}
 
-                {{!-- <div class="col-md-9 post-title"> --}}
-              {{!-- <div class="card-header"> --}}
-            <!-- Render user-specific data with Handlebars.js expressions -->
-            {{!-- <h4>{{post.title}}</h4> --}}
-            
-
-        {{!-- <div class="col-md-3 post-title"> --}}
-            <div class="card-header">
-                <p class="date-time">-by {{user.username}} on {{format_date post.createdAt}}</p>
-            </div>
-    
-            <p class="card-body">{{content}}</p>
-            </div>
-        </div>
-{{!-- </a>  --}}
+                        {{!-- <div class="col-md-9 post-title"> --}}
+                            {{!-- <div class="card-header"> --}}
+                                <!-- Render user-specific data with Handlebars.js expressions -->
+                                {{!-- <h4>{{post.title}}</h4> --}}
 
 
-        {{/each}}
+                                {{!-- <div class="col-md-3 post-title"> --}}
+                                    <div class="card-header">
+                                        <p class="date-time">-by {{user.username}} on {{format_date post.createdAt}}</p>
+                                    </div>
+
+                                    <p class="card-body">{{content}}</p>
+                                </div>
+                            </div>
+                            {{!-- </a> --}}
+
+
+                            {{/each}}
         </article>
 
-    {{#if loggedIn}}
-      <script src="/js/logout.js"></script>
-    {{/if}}
+        {{#if loggedIn}}
+        <script src="/js/logout.js"></script>
+        {{/if}}
 
     </div>
 </body>

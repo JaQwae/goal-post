@@ -43,10 +43,6 @@
   padding-right: 20px;
 }
 
-.mypost {
-  background-color: navy;
-}
-
 .home-logo {
 background-color: white;
 padding: 30px;
@@ -161,6 +157,7 @@ footer {
   bottom: -500px;
   height: 200px;
   background-color: slategray;
+  text-align: center;
 }
 
 h4.goalpost2 {
@@ -255,10 +252,15 @@ a{
   /* padding-left: 500px; */
 }
 
-/*****BLOG*********/
+/*************************************BLOG************************/
 .posthome {
-  /* background-color: navy; */
+  background-color: var(--tertiary-color);
 }
+
+.mypost {
+  background-color: var(--darker-color);
+}
+
 
 .wrapper {
   width: 100%;
