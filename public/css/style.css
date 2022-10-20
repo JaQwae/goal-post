@@ -1,9 +1,9 @@
 :root {
-  --primary-color: #c7e9d5;
-  --secondary-color: #cee0c4;
-  --tertiary-color: #8ea1a1;
-  --lighter-color: #a9a9ac;
-  --darker-color: #202030;
+  --primary-color: #202030;
+  --secondary-color: slategray;
+  --tertiary-color: #d7fff6;
+  --lighter-color: #d0d0dd;
+  --darker-color: #060608;
   --border-radius-color: 0.3rem;
 }
 
@@ -11,15 +11,10 @@
   box-sizing: border-box;
 }
 
-.homepage {
-  /* background-color: rgba(0, 0, 0, .3); */
-  background-color: var(--darker-color);
-}
-
 .home-container {
   display: flex;
   flex-wrap: wrap;
-  background-color: var(--darker-color);
+  background-color: var(--secondary-color);
   padding-bottom:100px;
   padding-left: 200px;
   padding-right: 200px;
@@ -30,10 +25,10 @@
 }
 
 .home-info {
-  display: flex;
-  flex-wrap: wrap;
-  background-image: url("/img/Cheering-in-box.jpg");
-  background-size: cover;
+  /* display: flex;
+  flex-wrap: wrap; */
+  /* background-image: url("/img/Cheering-in-box.jpg"); */
+  /* background-size: cover; */
   position: relative;
 }
 
@@ -59,10 +54,14 @@ padding: 30px;
 }
 
 .nav-link {
-  color: var(--darker-color);
+  color: var(--primary-color);
   font-size: 150%;
   font-weight: 600;
   font-family: serif;
+}
+
+.navbar {
+  background-color: var(--lighter-color);
 }
 
 
@@ -86,11 +85,11 @@ padding: 30px;
 .login-logout-container {
   display: flex;
   align-items: flex-end;
-  /* border-bottom: solid var(--darker-color); */
+  /* border-bottom: solid var(--primary-color); */
 }
 
 .container-fluid {
-  /* border-bottom: solid var(--darker-color); */
+  /* border-bottom: solid var(--primary-color); */
 }
 
 /* .login-logout {
@@ -105,6 +104,15 @@ padding: 30px;
   font-family: serif;
   color: slategray;
   font-weight: bold;
+}
+
+.tagline {
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  /* font-family: serif; */
+  color: var(--lighter-color);
+  font-weight: normal;
 }
 
 .logo-row {
@@ -143,11 +151,8 @@ padding: 30px;
 
 header {
   height: 70px;
-  width: 100%;
-  /* background-color: black; */
-  /* border-bottom: 10px solid var(--darker-color); */
-  /* background-color: lightgray; */
-
+  /* width: 100%; */
+  /* border-bottom: 10px solid var(--primary-color); */
 }
 
 h1.goalpost1 {
@@ -155,23 +160,23 @@ h1.goalpost1 {
   font-size: 60px;;
   color: slategray;
   font-weight: 600;
-  padding-left:20px;
-  background-color: var(--darker-color);
+  background-color: var(--primary-color);
 }
 
 footer {
   /* position: absolute; */
-  position: sticky;
-  bottom: -500px;
+  position: relative;
+  width:100%;
+  bottom: 0;
   height: 200px;
-  background-color: slategray;
+  background-color: var(--primary-color);
   text-align: center;
 }
 
 h4.goalpost2 {
   font-size: 30px;
   font-family: serif;
-  color: white;
+  color: var(--lighter-color);
   font-weight: 600;
   padding:20px;
 }
@@ -203,22 +208,6 @@ h4.goalpost2 {
     animation-duration: 1.5s;
     position: relative;
     left: 0%;
-}
-
-.post-home{
-  margin-left: 20%;
-  text-align: center;
-  margin-top: 50px;
-  border: 2px solid lightslategrey;
-  background-color: lightgray;
-  width: 60%;
-  padding: 5px;
-  font-weight: bold;
-  font-size: x-large;
-}
-
-.post-title {
-  color: slategray;
 }
 
 .login-form, .sign-up-form {
@@ -254,13 +243,28 @@ a{
 
 /*************************************BLOG************************/
 .posthome {
-  background-color: var(--tertiary-color);
+  background-color: var(--secondary-color);
+}
+
+.post-home{
+  margin-left: 20%;
+  text-align: center;
+  margin-top: 50px;
+  border: 2px solid lightslategrey;
+  background-color: lightgray;
+  width: 60%;
+  padding: 5px;
+  font-weight: bold;
+  font-size: x-large;
+}
+
+.post-title {
+  color: slategray;
 }
 
 .mypost {
-  background-color: var(--darker-color);
+  background-color: var(--secondary-color);
 }
-
 
 .wrapper {
   width: 100%;
@@ -271,9 +275,10 @@ a{
 }
 
 .hero {
-  background-color: var(--darker-color);
-  color: var(--primary-color);
+  background-color: var(--primary-color);
+  color: var(--tertiary-color);
   padding: 3% 4%;
+  text-align: center;
 }
 
 .hero p {
@@ -281,14 +286,19 @@ a{
 }
 
 .card {
+  /* background-color: var(--secondary-color); */
   margin: 0 0 20px 0;
-  border: 2px solid var(--darker-color);
+  border: 2px solid var(--primary-color);
   border-radius: var(--border-radius-color);
 }
 
+.card-reader{
+  background-color: var(--tertiary-color);
+}
+
 .card-header {
-  background-color: var(--darker-color);
-  color: var(--primary-color);
+  background-color: var(--primary-color);
+  color: var(--tertiary-color);
   border-radius: calc(0.18rem - 1px) calc(0.18rem - 1px) 0 0;
   padding: 1%;
 }
@@ -302,7 +312,7 @@ a{
 }
 
 .link-button {
-  color: var(--darker-color);
+  color: var(--primary-color);
 }
 
 .link-color {
@@ -313,9 +323,28 @@ a{
 
 .post {
   padding-top: 35px;
-  padding-left: 50px;
-  padding-right: 50px;
+  padding-bottom: 35px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+@media screen and (min-width: 640px) {
+.post {
+  padding-left: 100px;
+  padding-right: 100px;
   padding-bottom: 200px;
+  }
+}
+
+@media screen and (min-width: 640px) {
+  .footer {
+    }
+  }
+
+@media screen and (min-width:640px) {
+  .hero, .header .header a{
+    width: 100%;
+  }
 }
 
 @media screen and (min-width: 640px) {
@@ -490,10 +519,6 @@ a{
 
 /* media query for larger screens */
 @media screen and (min-width: 992px) {
-  header {
-    width: 75%;
-  }
-
   .card-column {
     flex: 0 0 33.333%;
     max-width: 33.333%;
