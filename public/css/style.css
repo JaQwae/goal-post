@@ -16,8 +16,8 @@
   flex-wrap: wrap;
   background-color: var(--secondary-color);
   padding-bottom:100px;
-  padding-left: 200px;
-  padding-right: 200px;
+  /* padding-left: 200px;
+  padding-right: 200px; */
 }
 
 .chart-header {
