@@ -16,8 +16,8 @@
 }
 
 .home-container {
-  display: flex;
-  flex-wrap: wrap;
+  /* display: flex; */
+  /* flex-wrap: wrap; */
   background-color: var(--secondary-color);
 }
 
@@ -233,7 +233,7 @@ footer {
 h4.goalpost2 {
   font-size: 30px;
   font-family: serif;
-  color: var(--lighter-color);
+  color: var(--secondary-color);
   font-weight: 600;
   padding:20px;
 }
@@ -269,6 +269,7 @@ h4.goalpost2 {
 
 .login-page {
 background-color: var(--secondary-color);
+padding-bottom: 40px;
 }
 
 .login-form, .sign-up-form {
