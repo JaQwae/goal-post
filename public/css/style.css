@@ -18,27 +18,26 @@
 .home-container {
   /* display: flex; */
   /* flex-wrap: wrap; */
+  max-width: 100%;
   background-color: var(--secondary-color);
 }
 
 @media screen and (min-width:768px) {
   .home-container {
-  padding-left: 25px;
-  padding-right: 25px;
+  /* padding-left: 25px;
+  padding-right: 25px; */
   }
 }
 
-.home-info {
-  /* display: flex;
-  flex-wrap: wrap; */
-  /* background-image: url("/img/Cheering-in-box.jpg"); */
-  /* background-size: cover; */
-  position: relative;
-}
+/* @media screen and (max-width: 726px) {
+  .home-container, .footer, body {
+width: 100%
+  }
+} */
 
 .text-block {
   position: absolute;
-  width: 600px;
+  width: 300px;
   bottom: 20px;
   left: 20px;
   background-color: rgba(0, 0, 0, 0.5);
@@ -47,10 +46,37 @@
   padding-right: 20px;
 }
 
+@media screen and (min-width: 680px) {
+  .text-block {
+    width: 600px;
+  }
+}
+
 .home-logo {
+display: flex;
+align-items: center;
 background-color: white;
-padding: 30px;
-/* align-items: center; */
+padding-left: 70px;
+padding-bottom: 10px;
+padding-top: 10px;
+}
+
+.flex-item {
+  border: 5px solid var(--secondary);
+  background-color: transparent;
+  /* color: var(--tertiary); */
+  min-height: 150px;
+  max-height: 150px;
+  flex-basis: calc(50% - 1em);
+  display: flex;
+  align-items: flex-end;
+  padding: 0 0 20px 0;
+  margin: 0.5em;
+  text-decoration: none;
+  /* background-blend-mode: soft-light; */
+  background-size: 150%;
+  transition: all 0.5s;
+  font-size: 0.9rem;
 }
 
 .logo-background {
@@ -74,9 +100,9 @@ padding: 30px;
 } */
 
 .hero-image {
-  background-image: url("/w3images/photographer.jpg");
-  background-color: #cccccc;
-  height: 500px;
+  background-image: url("/img/Cheering-in-box.jpg");
+  background-color: var(--secondary-color);
+  height: 600px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -165,7 +191,7 @@ padding: 30px;
   padding-bottom: 20px;
   /* font-family: serif; */
   color: var(--lighter-color);
-  font-weight: normal;
+  font-weight: 500;
 }
 
 .logo-row {
@@ -277,6 +303,14 @@ h4.goalpost2 {
     /* margin-bottom: 500px; */
     /* left: 18.5%; */
     /* bottom: 200px */
+  }
+
+  .flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
   }
 
   .row p {
@@ -675,8 +709,3 @@ align-items: center;
   }
 }
 
-@media screen and (max-width: 726px) {
-  .home-container, .footer, body {
-width: 100%
-  }
-}
