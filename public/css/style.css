@@ -102,7 +102,7 @@ padding-top: 10px;
 .hero-image {
   background-image: url("/img/Cheering-in-box.jpg");
   background-color: var(--secondary-color);
-  height: 600px;
+  height: 500px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
