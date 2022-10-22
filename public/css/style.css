@@ -465,6 +465,15 @@ align-items: center;
   border-bottom: 3px solid var(--darker-color);
 }
 
+.hero-chart {
+  background-color: var(--primary-color);
+  color: var(--tertiary-color);
+  padding: 3% 4%;
+  text-align: center;
+  border-bottom: 3px solid var(--darker-color);
+  font-family: serif;
+}
+
 .hero p {
   max-width: 75%;
 }
