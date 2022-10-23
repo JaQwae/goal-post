@@ -115,15 +115,6 @@ padding-top: 10px;
   /* border-bottom: solid var(--primary-color); */
 /* } */
 
-.nav-container {
-  /* display: flex; */
-  /* flex-direction: row; */
-  /* justify-content: space-between; */
-  /* flex-wrap: wrap; */
-  /* align-items: center; */
-  /* background-color: var(--tertiary);
-  box-shadow: 0 5px 35px rgba(146, 204, 206, 0.4); */
-}
 
 .navbar {
   /* display: flex;
@@ -131,17 +122,6 @@ padding-top: 10px;
   flex-wrap: wrap; */
   background-color: var(--lighter-color);
 }
-
-/* @media screen and (max-width: 980px) {
-.nav-container {
-    padding: 0 0 10px 0;
-    justify-content: center;
-    text-align: center;
-  }
-
-  .nav-container nav {
-    justify-content: center;
-  }
 
 .nav {
   display: flex;
@@ -152,9 +132,13 @@ padding-top: 10px;
 .nav a {
   text-decoration: none;
   padding: 5px 10px;
-  color: var(--secondary);
+  color: var(--lighter);
   margin-right: 10px;
-  background-image: linear-gradient(270deg, var(--secondary) 0%, var(--secondary) 100%);
+  background-image: linear-gradient(
+    270deg,
+    var(--secondary) 0%,
+    var(--lighter) 100%
+  );
   background-repeat: no-repeat;
   background-size: 100% 0.2em;
   background-position: bottom;
@@ -169,8 +153,7 @@ padding-top: 10px;
 
 .nav a:last-child {
   margin-right: 0;
-} */
-
+}
 /* .login-logout {
   align-items: flex-end;
   align-items: right;
@@ -258,10 +241,6 @@ h4.goalpost2 {
   color: var(--secondary-color);
   font-weight: 600;
   padding:20px;
-}
-
-.chart-header {
-  padding: 50px;
 }
 
 @media screen and (min-width: 768px) {
@@ -394,10 +373,6 @@ padding-bottom: 40px;
 a{
   text-decoration: none;
 }
-
-/* .btn-container {
-align-items: center;
-} */
 
 #create-btn{
   width: 50%;
