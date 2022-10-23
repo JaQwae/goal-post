@@ -95,9 +95,6 @@ padding-top: 10px;
 .logo {
   height: 80px;
 }
-/* .chart-background {
-  background-color: rgba(0, 0, 0, 0.5);
-} */
 
 .hero-image {
   background-image: url("/img/Cheering-in-box.jpg");
@@ -109,12 +106,16 @@ padding-top: 10px;
   position: relative;
 }
 
-/* .login-logout-container {
-  display: flex;
-  align-items: flex-end; */
-  /* border-bottom: solid var(--primary-color); */
-/* } */
-
+.hero-image-login {
+  background-image: url("/img/Cheering-in-box.jpg");
+  background-color: var(--secondary-color);
+  height: 700px;
+  opacity: 80%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
 
 .navbar {
   /* display: flex;
@@ -154,10 +155,6 @@ padding-top: 10px;
 .nav a:last-child {
   margin-right: 0;
 }
-/* .login-logout {
-  align-items: flex-end;
-  align-items: right;
-}  */
 
 .select-league {
   text-align: center;
@@ -340,16 +337,21 @@ h4.goalpost2 {
     left: 0%;
 } */
 
-.login-page {
-background-color: var(--secondary-color);
+.login-container {
+/* background-color: var(--secondary-color); */
 padding-bottom: 40px;
 }
 
 .login-form, .sign-up-form {
+  position:center;
   text-align: center;
+  opacity: 100%;
+  /* left: 20px;
+  right: 20px; */
+  bottom: 20px;
   margin: auto;
-  width: 75%;
-  border: 4px solid #5e6654;
+  width: 50%;
+  border: 4px solid var(--secondary-color);
   padding: 10px;
   border: 3px solid var(--dark);
   border-radius: var(--border-radius);
@@ -359,6 +361,15 @@ padding-bottom: 40px;
   background-color: var(--lighter-color);
 }
 
+/* position: absolute;
+width: 300px;
+bottom: 20px;
+left: 20px;
+background-color: rgba(0, 0, 0, 0.5);
+color: white;
+padding-left: 20px;
+padding-right: 20px; */
+
 @media screen and (min-width:640px) {
  .login-form, .sign-up-form {
     width: 20%;
@@ -367,7 +378,11 @@ padding-bottom: 40px;
 
 .user-info{
   text-align: center;
-  color: var(--primary-color)
+  color: var(--darker-color);
+  /* background-color: var(--tertiary-color); */
+  /* opacity: 100%; */
+  text-shadow: var(--tertiary-color);
+  font-weight: bolder;
 } 
 
 a{
@@ -375,7 +390,8 @@ a{
 }
 
 #create-btn{
-  width: 50%;
+  width: 100%;
+  /* height: 20px; */
   margin-top: 20px;
   margin-left: 20px;
   background-color: var(--primary-color);
@@ -385,14 +401,21 @@ a{
   font-size: x-large;
 }
 
+
+
 .mb-3 {
   /* background-color: var(--tertiary-color); */
   color: var(--primary-color);
 }
 
 .btn {
+  max-height: 60px;
   color: var(--tertiary-color);
   background-color: var(--secondary-color);
+  margin-top: 25px;
+  margin-bottom: 25px;
+  margin-left: auto;
+  /* margin-right: 50px; */
 }
 
 /*************************************BLOG************************/
