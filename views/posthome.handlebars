@@ -15,7 +15,7 @@
 
             {{#if loggedIn}}
             {{!-- <h1 class="app-title"><i class="fab"></i>GoalPost Blog</h1> --}}
-                        <h1 class="app-title">GoalPost Blog</h1>
+            <h1 class="app-title">GoalPost Blog</h1>
 
             {{else}}
             {{!-- <h1 class="app-title"><i class="fab"></i>The Tech Blog</h1> --}}
@@ -24,7 +24,7 @@
 
         <article class="post">
             {{!-- loops that render each post on homepage --}}
-            {{#each posts as |post| }}
+            {{#each posts as |post|}}
 
 
             <div class="card">
@@ -41,7 +41,7 @@
 
                                 {{!-- <div class="col-md-3 post-title"> --}}
                                     <div class="card-header">
-                                        <p class="date-time">-by {{user.username}} on {{format_date post.createdAt}}</p>
+                                        <p class="date-time">- started by {{user.username}} on {{format_date post.createdAt}}</p>
                                     </div>
 
                                     <p class="card-body">{{content}}</p>

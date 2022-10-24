@@ -6,11 +6,13 @@ const withAuth = require('../utils/auth')
 router.get('/', withAuth, async (req, res) => {
     try {
         
-        const dbPostData = await Post.findAll();
+        const dbPostData = await Post.findAll({
+            include: [User]
+        });
         
         // Serialize user data so templates can read it
         const posts = dbPostData.map((post) => post.get({ plain: true }));
-        
+        console.log(posts);
         // Pass serialized post data into Handlebars.js template
         res.render('posthome', { posts, loggedIn: req.session.loggedIn });
 
@@ -22,7 +24,7 @@ router.get('/', withAuth, async (req, res) => {
     
 });
 
-// renders an individual MMA post
+// renders an individual post
 router.get('/:id', withAuth, async (req, res) => {
     try{
         const dbPostData = await Post.findByPk(req.params.id, {
