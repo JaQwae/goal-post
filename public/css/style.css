@@ -84,13 +84,32 @@ padding-top: 10px;
 }
 
 .nav-link {
+  text-decoration: none;
+  padding: 5px 10px;
   color: var(--primary-color);
+  margin-right: 10px;
+  background-image: linear-gradient(
+    270deg,
+    var(--secondary) 0%,
+    var(--lighter) 100%
+  );
+  background-repeat: no-repeat;
+  background-size: 100% 0.2em;
+  background-position: bottom;
+  transition: all 0.25s ease-in;
   font-size: 150%;
   font-weight: 600;
   font-family: serif;
 }
 
+.nav-link:hover {
+  background-size: 100% 100%;
+  color: var(--primary);
+}
 
+.nav-link:last-child {
+  margin-right: 0;
+}
 
 .logo {
   height: 80px;
@@ -214,6 +233,11 @@ header {
   /* border-bottom: 10px solid var(--primary-color); */
 }
 
+header.phone {
+  right: 10px;
+  color: var(--lighter-color);
+}
+
 h1.goalpost1 {
   font-family: serif;
   font-size: 60px;;
@@ -229,6 +253,12 @@ footer {
   height: 200px;
   background-color: var(--primary-color);
   text-align: center;
+  color: var(lighter);
+}
+
+footer a {
+  margin-right: 15px;
+  color: var(--lighter-color);
 }
 
 h4.goalpost2 {
