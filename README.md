@@ -35,9 +35,11 @@ Node, Express, Handlebars, MySQL, Sequelize, Chart.js
 
 <div align="center">
   <a href="https://goal-2022.herokuapp.com/">
-<img src="https://user-images.githubusercontent.com/102529279/197861600-0cdf8ae9-8b6c-43b0-836c-36ab7018937f.JPG" alt="home page showing fans cheering in a suite over a football field">
+  <img src="https://user-images.githubusercontent.com/102529279/197861600-0cdf8ae9-8b6c-43b0-836c-36ab7018937f.JPG" alt="home page showing fans cheering in a suite       over a football field">
+    <br><br>
   <img src="https://user-images.githubusercontent.com/102529279/196694181-0ff440e8-7387-4420-b180-52c18d38d315.png" alt="bar graph displaying nfl teams and their values">
-    <img src="https://user-images.githubusercontent.com/102529279/197862163-2207cf75-1af5-4035-826e-5e23407ca481.png" alt="goal post screenshot of blog postings">
+   <br><br>
+   <img src="https://user-images.githubusercontent.com/102529279/197862163-2207cf75-1af5-4035-826e-5e23407ca481.png" alt="goal post screenshot of blog postings">
 
 
   </a>
