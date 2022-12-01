@@ -82,6 +82,9 @@
         type: "bar",
         data,
         options: {
+                    //***********'maintainAspectRatio: false' is for mobile responsiveness******************//
+                    maintainAspectRatio: false,
+
             plugins: {
                 // sub-titles in chart
                 title: {
